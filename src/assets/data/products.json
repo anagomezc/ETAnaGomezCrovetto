@@ -1,0 +1,128 @@
+[
+    {
+      "id": 1,
+      "name": "Colchoneta de Yoga",
+      "description": "Colchoneta de yoga antideslizante y cómoda para prácticas intensivas.",
+      "price": 3000,
+      "details": {
+        "color": "Azul",
+        "material": "Espuma de alta densidad",
+        "dimensions": "183cm x 61cm x 6mm"
+      },
+      "img": "colchoneta.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Termo para Yoga",
+      "description": "Termo de acero inoxidable con diseño elegante para mantener tus líquidos fríos o calientes durante las prácticas de yoga.",
+      "price": 2000,
+      "details": {
+        "color": "Plateado",
+        "capacity": "500ml",
+        "features": ["Diseño a prueba de fugas", "Aislamiento térmico"],
+        "material": "Acero inoxidable"
+      },
+      "img": "termo.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Vincha de Yoga",
+      "description": "Vincha elástica para yoga, suave y cómoda, ideal para mantener el cabello fuera de tu rostro durante las prácticas.",
+      "price": 1000,
+      "details": {
+        "color": "Negro",
+        "material": "Algodón y elastano",
+        "size": "Única"
+      },
+      "img": "vincha.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Pelota Inflable para Yoga",
+      "description": "Pelota inflable de PVC resistente para fortalecer el núcleo y mejorar el equilibrio durante las prácticas de yoga.",
+      "price": 1500,
+      "details": {
+        "color": "Verde",
+        "diameter": "25cm",
+        "features": ["Material antideslizante", "Fácil de inflar"],
+        "material": "PVC"
+      },
+      "img": "pelota.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Bloque de Yoga",
+      "description": "Bloque de espuma EVA ligero y duradero para ayudarte a mejorar tu alineación y flexibilidad en las posturas de yoga.",
+      "price": 1300,
+      "details": {
+        "color": "Morado",
+        "dimensions": "23cm x 15cm x 7.5cm",
+        "features": ["Superficie antideslizante", "Fácil de limpiar"],
+        "material": "Espuma EVA"
+      },
+      "img": "bloque.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Toalla para Yoga",
+      "description": "Toalla de microfibra absorbente y antideslizante para colocar sobre tu colchoneta y mejorar el agarre durante las prácticas intensivas.",
+      "price": 2500,
+      "details": {
+        "color": "Gris",
+        "dimensions": "183cm x 61cm",
+        "features": ["Absorbente y de secado rápido", "Fácil de lavar"],
+        "material": "Microfibra"
+      },
+      "img": "toalla.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "Bolso de Yoga",
+      "description": "Bolso espacioso y resistente para transportar tus accesorios de yoga de forma cómoda y organizada.",
+      "price": 3500,
+      "details": {
+        "color": "Negro",
+        "material": "Nylon duradero",
+        "size": "Grande",
+        "features": ["Correas ajustables", "Compartimentos separados"]
+      },
+      "img": "bolso.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Cinturón para Yoga",
+      "description": "Cinturón de yoga ajustable para ayudarte a mejorar la flexibilidad y el estiramiento en tus prácticas diarias.",
+      "price": 900,
+      "details": {
+        "color": "Azul",
+        "material": "Algodón resistente",
+        "size": "Única"
+      },
+      "img": "cinturon.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "Rueda de Yoga",
+      "description": "Rueda de yoga diseñada para mejorar el equilibrio, la flexibilidad y la alineación en tus posturas de yoga.",
+      "price": 4000,
+      "details": {
+        "color": "Marrón",
+        "diameter": "32cm",
+        "features": ["Anillo interior acolchado", "Superficie antideslizante"],
+        "material": "Plástico"
+      },
+      "img": "rueda.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Guantes de Yoga",
+      "description": "Guantes de yoga con agarre antideslizante para mejorar la estabilidad y el rendimiento durante tus prácticas.",
+      "price": 1200,
+      "details": {
+        "color": "Negro",
+        "material": "Nylon y spandex",
+        "size": "Única"
+        },
+        "img": "guantes.jpeg"
+    }
+]

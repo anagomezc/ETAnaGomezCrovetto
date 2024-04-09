@@ -1,0 +1,71 @@
+
+/* Estilo del datepicker */
+.mat-datepicker-content {
+    background-color: #f5f5f5; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilo del botón de selección de fecha */
+.mat-datepicker-toggle {
+    color: #007bff; /* Color del texto */
+}
+.datepicker-container {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Ajusta el ancho según sea necesario */
+  }
+  
+  .mat-datepicker-content {
+    top: 100% !important; /* Controla la posición vertical */
+    left: 0 !important; /* Controla la posición horizontal */
+  }
+  /* Ajustar el ancho del MatDatepicker */
+.mat-datepicker-content {
+    width: 250px !important; /* Ejemplo de ancho personalizado */
+  }
+  
+  /* Alinear el MatDatepicker a la derecha */
+  .mat-datepicker-content {
+    left: auto !important;
+    right: 0 !important;
+  }
+  
+.login{
+    text-align: -webkit-center;
+    margin-top: 5%;
+}
+.container {
+    border: 1px solid #8FB8EB;
+    width: fit-content;
+    padding: 3%;
+    border-radius: 15px;
+    width: 50%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+.form-item{
+    margin: 3% 0 
+}
+input {
+    padding: 2%;
+    width: 50%;
+    margin-left: 3%;
+    border: 1px dotted #8FB8EB;
+    border-radius: 5px;
+}
+input:focus{
+    border: 2px solid #8FB8EB;
+    box-shadow: blue($color: #000000);
+}
+.btn-submit{
+    border: none;
+    padding: 3%;
+    width: fit-content;
+    background-color: #E1DFDF;
+    float: right;
+    border-radius: 10px;
+    margin-top: 5%;
+}

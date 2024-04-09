@@ -1,0 +1,34 @@
+<div class="modal" *ngIf="modalService.getModalState('productModal') | async" (click)="closeModal()" [@modalAnimation]>
+
+    <div class="modal-container" (click)="stopPropagation($event)">
+        <div class="close-container">
+            <span class="close" (click)="closeModal()">&times;</span>
+        </div>
+        <div class="modal-content">
+            <img class="product-img" src="../../assets/data/images/{{product?.img}}" />
+            <div class="product-info">
+              <h2>{{product?.name}}</h2>
+              <div>
+                <p>$ {{product?.price}}</p>
+                <p>{{product?.description}}</p>
+                <p class="detail" style="margin-top: 20%;">Color: {{product?.details?.color}}</p>
+                <p class="detail">Material: {{product?.details?.material}}</p>
+              </div>
+            
+              <div class="btn-container">
+                <div class="quantity-container">
+                    <button (click)="decrementQuantity()" class="grey-btn-r">-</button>
+                    <input type="number" [(ngModel)]="quantity" min="1" class="input">
+                    <button (click)="incrementQuantity()" class="grey-btn-r">+</button>
+                  </div>
+                  
+                <button class="grey-btn" (click)="addToCart()">Agregar al carrito</button>
+
+              </div>
+            </div>
+        </div>
+
+      
+     
+    </div>
+</div>

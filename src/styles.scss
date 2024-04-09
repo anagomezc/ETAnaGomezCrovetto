@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0px
+}
+body{
+    font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+ 
+}
+p, td{
+    color: #737373
+}
+h1, h2, h3, h4, th, button, input{
+    color: #595959;
+}
+/* styles.scss */
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  

@@ -1,0 +1,31 @@
+.container-1{
+    display: flex;
+    margin: 10%;
+    margin-top: 0%;
+    padding-top: 5%;
+    text-align: center;
+}
+.img{
+    width: 80%;
+    border-radius: 15px;
+}
+
+p{
+    line-height: 1.5;
+}
+.about-us{
+    background-color: #8fb8eb;
+  background-image: linear-gradient(to bottom right, #8fb8eb, #e1dfdf);
+  color: #333; 
+  margin-top: -1%;
+}
+
+@media (max-width: 768px) {
+    .container-1{
+        flex-direction: column;
+    }
+    .img{
+        width: 100%;
+    }
+
+}
