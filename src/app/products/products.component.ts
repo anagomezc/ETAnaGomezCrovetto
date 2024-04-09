@@ -22,17 +22,11 @@ export class ProductsComponent {
   getProductos(){
     this.productService.getProducts().subscribe((products: Product[]) => {
       this.products = products; 
-      console.log("Productos", this.products); 
-
     });  
   }
-  /* openModal(product: Product) {
-    this.selectedProduct = product;
-    this.modalService.openModal('productModal'); // Abre el modal específico para el producto
-  } */
+
   openModal(product: Product): void {
     this.selectedProduct = product;
-
     this.modalService.openModal('productModal');
   }
 }

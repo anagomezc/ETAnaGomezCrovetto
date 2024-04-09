@@ -7,9 +7,8 @@ import { User } from '../models/user.model';
 export class UserService {
 
   private users: User[] = [
-    { id:1, username: 'Juan', password: 'Juan', cart: [], purchaseHistory: [], vip: true, fechaVip: new Date()  },
+    { id:1, username: 'Juan', password: 'Juan', cart: [], purchaseHistory: [], vip: true },
     { id:2, username: 'Lucia', password: 'Lucia', cart: [], purchaseHistory: [], vip: false },
-    { id:3, username: 'Tomas', password: 'Tomas', cart: [], purchaseHistory: [], vip: false },
 
   ];
 
@@ -23,7 +22,10 @@ export class UserService {
     }
     return undefined
   }
-
+  logout(): void {
+    sessionStorage.removeItem('currentUser');
+  }
+  
   getUsers(): User[] {
     return this.users;
   }

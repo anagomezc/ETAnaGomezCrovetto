@@ -5,9 +5,7 @@ export class User {
       public password: string,
       public cart: any[] = [], 
       public purchaseHistory: any[] = [] ,
-      public vip: boolean,
-      public fechaVip?: Date,
-      public fechaNoVip?: Date
-    ) {}
+      public vip: boolean 
+   ) {}
   }
   

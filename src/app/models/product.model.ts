@@ -12,6 +12,5 @@ export interface Product {
     color: string;
     size?: string;
     material?: string
-    // Agrega cualquier otra propiedad detallada que necesites
   }
   

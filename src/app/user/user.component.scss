@@ -43,6 +43,7 @@ p{
     height: 25px;
     cursor: pointer;
 
+
   }
 
   .quantity-container{
@@ -59,7 +60,7 @@ p{
 table{
     width: 80%;
     border-collapse: collapse;
-    border-spacing: 10px; /* Espacio entre las filas y columnas de la tabla */
+    border-spacing: 10px; 
 
 
 }
@@ -70,8 +71,7 @@ tbody tr{
 th, td{
     padding: 10px;
     text-align: right;
-/*     padding-top: 40px;
- */}
+}
 th{
     border-bottom: 1px solid #8FB8EB !important;
     font-weight: 300;
@@ -87,13 +87,15 @@ h1{
    
 }
 .grey-btn{
-    padding: 2%;
+    padding: 3%;
     border: none;
     background-color: #E1DFDF;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
     cursor: pointer;
-    float: right;
+    height: fit-content;
+    align-self: center;
+    margin-right: 10%;
   }
 .h3{
    
@@ -134,6 +136,19 @@ h3{
     margin: 5%;
     border-bottom: 1px solid #8FB8EB;
 }
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10%;
+}
+.btn-container2{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    text-align: left;
+    margin-left: 10%;
+}
 @media(max-width: 768px){
     .product-img{
         width: 45vw;
@@ -141,6 +156,7 @@ h3{
     }
     h3{
         margin-top: 0%;
+        text-align: left;
     }
     .total-container{
         margin: 5%;
@@ -162,5 +178,14 @@ h3{
     }
     .modal-content{
         justify-content: space-between;
+    }
+    h2{
+        text-align: left;
+    }
+    .btn-container2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
     }
 }

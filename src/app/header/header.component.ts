@@ -52,11 +52,9 @@ export class HeaderComponent {
   ngOnInit(){
     this.checkScreenSize();
     this.carrito = this.cartService.obtenerCarritoDesdeSessionStorage();
-    console.log("Carrito", this.carrito)
 
   }
   reload(){
-    console.log("Recargando")
     this.carrito = this.cartService.obtenerCarritoDesdeSessionStorage();
 
   }
@@ -70,7 +68,6 @@ export class HeaderComponent {
   }
 
   toggleMenu(): void {
-    console.log("toggle menu", this.isMenuOpen)
     this.isMenuOpen = !this.isMenuOpen;
   }
 

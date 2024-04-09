@@ -15,23 +15,18 @@ export class ModalProductComponent {
 
   isVisible: boolean = false; 
   quantity: number = 1;
-/*   modalStateSubscription: Subscription | undefined;
- */
+
   constructor(public modalService: ModalService, private cartService: CartService) {
     this.isVisible = false;
     this.quantity = 1
-    /* this.modalStateSubscription = this.modalService.getModalState('productModal').subscribe((state: boolean) => {
-      this.isVisible = state;
-    }); */
+
   }
 
   @Input()
   product!: Product;
   
   ngOnInit(): void {
-    /* this.modalService.showModal$.subscribe((show: boolean) => {
-      this.isVisible = show;
-    }); */
+
   }
 
   openModal(): void {
@@ -46,7 +41,7 @@ export class ModalProductComponent {
   }
 
   incrementQuantity(): void {
-    if (this.quantity < 9) {
+    if (this.quantity < 20) {
       this.quantity++;
     }
   }
@@ -65,7 +60,6 @@ export class ModalProductComponent {
       this.cartService.agregarProductoACarrito(carritoId, this.product, this.quantity);
     }
     this.quantity = 1
-    window.location.reload();
 
   }
   stopPropagation(event: Event) {

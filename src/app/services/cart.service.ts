@@ -10,9 +10,7 @@ export class CartService {
   private carritos: Cart[] = [];
   private fechasPromocionables: Date[] = [
     new Date(2024, 4, 25), 
-    new Date(2024, 5, 25), 
-    new Date(2024, 3, 9), 
-    new Date(2024, 8, 15)  
+    new Date(2024, 6, 9)  
   ];
   
   constructor() { }

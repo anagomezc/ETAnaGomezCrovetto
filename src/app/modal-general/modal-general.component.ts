@@ -14,13 +14,7 @@ export class ModalGeneralComponent {
   isVisible: boolean = false;
 
   constructor(public modalService: ModalService, private router: Router) {}
-  /* closeModal(): void {
-    this.modalService.closeModal('generalModal'); 
-  }
-
-  openModal(): void {
-    this.modalService.openModal('generalModal'); 
-  } */
+ 
   openModal(): void {
     this.isVisible = true;
   }

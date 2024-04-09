@@ -19,34 +19,23 @@ export class ModalEliminarComponent {
   }
 
   confirmDelete(): void {
-    //this.cartService.eliminarCarrito(this.carrito.id)
    this.modalService.openModal('deletedCartModal');
     this.cartService.eliminarCarrito(this.carrito.id)
     let userString = sessionStorage.getItem('currentUser');
     if (userString) {
       let user = JSON.parse(userString);
       if (user.vip) {
-        console.log('El usuario es VIP.');
         const nuevoCarrito = this.cartService.crearCarrito('vip');
-        console.log('Nuevo carrito creado:', nuevoCarrito);
       } else {
-        console.log('El usuario no es VIP.');
         const fechaPromocionable = this.cartService.esFechaPromocionable(new Date());
         if (fechaPromocionable) {
-          console.log('La fecha es promocionable.');
           const nuevoCarrito = this.cartService.crearCarrito('promocional');
-          console.log('Nuevo carrito creado:', nuevoCarrito);
         } else {
-          console.log('La fecha no es promocionable.');
           const nuevoCarrito = this.cartService.crearCarrito('comun');
-          console.log('Nuevo carrito creado:', nuevoCarrito);
         }
       }
     } else {
-      console.log('No se encontró un usuario en sessionStorage.');
     }
-    window.location.reload();
-
 
 
   }
@@ -57,5 +46,9 @@ export class ModalEliminarComponent {
 
   cancelDelete(): void {
     this.modalService.closeModal('deleteCartModal');
+  }
+  redirectToUser(): void {
+    this.modalService.closeModal('deletedCartModal');
+    this.router.navigate(['/user']); 
   }
 }
